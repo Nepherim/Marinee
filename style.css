@@ -1,0 +1,445 @@
+/*
+ * PmWiki Marinee skin (based on Green Marinee by Ian Main http://e-lusion.com/)
+ * Version 1.0.0  (21-Oct-07)
+ *
+ * Examples at: http://pmwiki.com/Cookbook/Marinee and http://skins.solidgone.com/
+ * Copyright (c) 2007 David Gilbert
+ * Dual licensed under the MIT and GPL licenses:
+ *    http://www.opensource.org/licenses/mit-license.php
+ *    http://www.gnu.org/licenses/gpl.html
+ */
+
+/*
+	1) General selectors - body,h1/h3,a,blockquote,code,p
+	2) Structure - container,content,tagline
+	3) Left selectors - main,meta,comments
+	4) Right selectors - author,links,line,search,themes
+	5) Footer - extras
+	6) Forms - input,textarea
+	7) Accessibility - skip,hr
+	8) Hacks - clearfix
+*/
+
+/* 1) -=-=-=- General selectors -=-=-=- */
+
+body {
+	margin: 68px 0 20px 0;
+	padding: 0;
+	font-family: Arial, Verdana, Helvetica;
+	font-size: 76%;
+	text-align: center;
+	}
+h1 {
+	font-size: 2.2em;
+	margin: 0;
+	}
+h1 a:link, h1 a:visited {
+	text-decoration: none;
+	}
+h1 a:hover, h1 a:active {
+	background: none;
+	text-decoration: none;
+	}
+h2 {
+	font-weight: normal;
+	font-size: 1.8em;
+	margin: 10px 0 0 0;
+	}
+h2 a:link, h2 a:visited {
+	font-weight: normal;
+	text-decoration: none;
+	}
+h2 a:hover, h2 a:active {
+	background: none;
+	font-weight: normal;
+	text-decoration: none;
+	}
+h3 {
+	font-size: 1.4em;
+	margin: 15px 0 5px 0;
+	font-weight: normal;
+	}
+a:link,a:visited  {
+	text-decoration: none;
+	}
+a:hover, a:active {
+	text-decoration: none;
+	}
+blockquote {
+	border-left: 4px solid;
+	padding: 0 10px;
+	margin: 0 0 0 10px;
+	font-style: italic;
+	}
+code {
+	font-size: 1.2em;
+	}
+
+p {
+	line-height: 1.4;
+	margin-top:0px; 
+	margin-bottom:0px;
+	}
+
+/* 2)-=-=-=- Structure -=-=-=- */
+#header {
+	margin: -50px 15px 0 7px;
+	position: absolute;
+	width: 765px;
+	}
+#container {
+	width: 765px;
+	margin: 0 auto;
+	text-align: left;
+	}
+#content {
+	padding-top: 30px;
+	margin: 20px;
+	width: 530px;
+	}
+#content_bg {
+	clear: both;
+	}
+.tagline {
+	font-size: 1em;
+	}
+
+/* 3)-=-=-=- Left selectors -=-=-=- */	
+.meta {
+	font-size: .9em;
+	padding: 2px;
+	}
+.comments {
+	font-size: 1.2em;
+	padding-bottom: 25px;
+	border-bottom: 3px double;
+	}
+.comments a:link, .comments a:visited {
+	font-weight: bold;
+	text-decoration: none;
+	}
+.comments a:hover, .comments a:active {
+	text-decoration: none;
+	}	
+
+.alt {
+	border: 1px solid !important;
+	padding: 10px 10px 0 10px !important;
+	}
+.alt:hover {
+	border: 1px solid !important;
+	}
+.commentlist li:hover {
+	border: 1px solid;
+	}
+.commentlist {
+	padding: 0;
+	margin: 0;
+	}
+.commentlist li {
+	list-style: none;
+	padding: 10px 10px 0 10px;
+	border: 1px solid;
+	margin: 10px;
+	}
+p.metadate {
+	font-size: .8em;
+	margin: 0;
+	text-transform: uppercase;
+	}
+p.comment_meta {
+	margin: 0 0 10px 10px;
+	font-size: .9em;
+	}
+.comment_author a:visited {
+	font-weight: bold;
+	text-decoration: none;
+	}
+.reply {
+	font-weight: bold;
+	font-size: 1.2em;
+	margin: 10px 0 0 10px;
+	}
+.warning p { /* Used on the search page (image will appear if no result is found) */
+	background: url(images/warning.gif) no-repeat left;
+	height: 160px;
+	padding: 20px 0 0 90px;
+	font-size: 1.5em;
+	margin: 0 0 0 10px;
+	}
+.postinput {
+	margin-left: 10px;
+	}
+
+/* 4)-=-=-=- Right selectors -=-=-=- */	
+#right {
+	float: right;
+	padding: 25px 15px 10px;
+	
+	/* Box model hack used for IE5.5/5 */
+	voice-family: "\"}\""; 
+  	voice-family: inherit;
+  	width: 180px;
+	}
+#right .sidehead a {
+	font-size: 1.4em;
+	margin: 0;
+	font-weight: normal;
+	}
+#author li {
+	list-style: none;
+	margin: 0;
+	padding: 0 5px 20px 0;
+	font-size: .9em;
+	line-height: 1.4;
+	}
+#author ul {
+	padding: 20px 0 0 0;
+	margin: 0;
+	}
+#links p {
+	border-top: 3px solid;
+	margin-top: -5px;
+	margin: 0;
+	}
+#links li {
+	list-style: none;
+	padding: 2px 0 2px 20px;
+	font-size: .9em;
+	}
+#links li li {
+	background: url(images/sub_icon.gif) no-repeat 0 4px;
+	padding: 2px 0 2px 13px;
+	font-size: 1em !important;
+	font-size: .9em;
+	}
+	
+#links li li li {
+	background: url(images/sub_icon.gif) no-repeat 0 5px;
+	padding: 3px 0 2px 13px;
+	font-size: 1em !important;
+	font-size: .9em;
+	}
+#links ul {
+	padding: 0 10px 10px;
+	margin: 0 5px 5px;
+	}
+#links ul ul {
+	padding: 0 !important;
+	margin: 2px 0 0 0 !important;
+	}
+#links ul ul ul {
+	padding: 0 !important;
+	margin: 0 0 -4px 0 !important;
+	}
+#links a, .wikicmds a {
+	text-decoration: none;
+	}
+#links a:link, #links a:visited {
+	font-weight: normal;
+	}
+.line {
+	margin-top: -5px;
+	}
+#search {
+	margin: 0 auto 15px;
+	padding-top: 0;
+	}
+#search h3 {
+	font-size: 1.4em;
+	margin: 20px 0 -10px 0;
+	font-weight: normal;
+	}
+p.searchinfo {
+	margin: 2px 0 -8px 2px;
+	font-size: .9em;
+	}
+.searchfield {
+	border: 1px solid;
+	padding: 2px 5px 1px 5px;
+	width: 107px;
+	}
+.searchfield:hover {
+	border: 1px solid;
+	}
+.submit, .submit:hover {
+	height: 20px;
+	width: 52px;
+	border: 0;
+	margin-left: 2px;
+	text-indent: -9999px;
+	cursor: pointer;
+	}
+.submit:hover {
+   background-position: 0 -20px;
+	}
+.themes {
+	font-size: .9em;
+	}
+
+/* 5)-=-=-=- Footer -=-=-=- */	
+#footer_container {
+	clear: both;
+	height: 75px;
+	width: 765px;
+	}
+#footer {
+	margin: 20px 20px 5px;
+	float: left;
+	font-size: .8em;
+	}
+#versions {
+	float: right;
+	text-align: right;
+	}
+#footer p {
+	padding: 30px 0 0 70px;
+	float: left;
+	text-transform: uppercase;
+	font-size: .8em;
+	}
+.extras {
+	float: right;
+	padding: 33px 18px 0 0;
+	}
+.extras a {
+	text-decoration: none;
+	font-weight: bold;
+	}
+.extras a:link, .extras a:visited {
+	padding: 5px;
+	border: 2px solid;
+	}
+.extras a:hover, .extras a:active {
+	padding: 5px;
+	border: 2px solid;
+	}
+.extras li {
+	display: inline;
+	}
+.extras ul {
+	padding: 0 0 10px 0;
+	margin: 0;
+	}
+
+/* 6)-=-=-=- Forms -=-=-=- */
+input {
+	border: 1px solid;
+	padding: 2px 5px 1px 5px;
+	margin: 2px 1px;
+	font-size: 1em;
+	}
+input:hover {
+	border: 1px solid;
+	font-size: 1em;
+	}
+.hidden {
+	margin: 0;
+	padding: 0;
+	}
+textarea {
+	font-family: Arial, Verdana, Helvetica;
+	font-size: 1.1em;
+	border: 1px solid;
+	padding: 2px 5px 1px 5px;
+	width: 515px;
+	overflow: auto;
+	}
+textarea:hover {
+	border: 1px solid;
+	}
+
+/* 7)-=-=-=- Accessibility -=-=-=- */
+#skip {
+	display: none;
+	}
+hr { /* Simple style when CSS not in use */
+	display: none;
+	}
+
+/* 8)-=-=-=- Hacks -=-=-=- */
+.clearfix:after { /* float hack used to float content correctly */
+    content: "."; 
+   	display: block; 
+   	height: 0; 
+   	clear: both; 
+    visibility: hidden;
+	}
+/* Hides from IE-mac \*/
+* html .clearfix {height: 1%;}
+/* End hide from IE-mac */	
+
+/* 9)-=-=-=- PmWiki -=-=-=- */
+.wikicmds { 
+	float: right; 
+	margin-top: -16px;
+	padding-right: 14px;
+	text-align: right;
+	width: 250px;
+	font-size: .85em;
+   }
+.wikicmds ul { 
+	list-style: none; 
+	margin: 0;
+	padding: 0;
+   }  
+.wikicmds li { 
+	display: inline; 
+	margin: 0px 3px; 
+   }
+.quickref {
+	margin-top: 20px;
+	}
+#wikitext p {
+	margin: 0.5em 0 0;		/* for better consistency across platforms */
+   }
+.quickref p {
+	margin: 0 !important;
+	}
+ul, ol, pre, dl, p {
+	margin-top:0px; 
+	margin-bottom:20px; 
+	}
+#wikitext ol li, #wikitext ul li {
+	margin-top: 6px;
+	}
+.varlink, pre, code.escaped { 
+	font-size: 110% !important; 
+	}
+code.escaped, .varlink, .varlink code, pre, code.escaped { 
+/*	white-space: nowrap; */
+	}
+.vspace { 
+	margin-top:1.33em; 
+	}
+.indent { 
+	margin-left:40px; 
+	}
+.outdent { 
+	margin-left:40px; text-indent:-40px; 
+	}
+a.createlinktext { 
+	text-decoration:none; border-bottom:none; 
+	}
+a.createlink { 
+	text-decoration:none; 
+	position:relative; 
+	top:-0.5em; 
+	font-weight:bold; 
+	font-size:smaller; 
+	border-bottom:none; 
+	}
+img { 
+	border:0px; 
+	}
+#wikidiff { 
+	font-size: 110%; 
+	}
+.vspace p {
+   margin-top: 3em;
+   }
+#wikiedit a, #wikiedit a:hover, #wikiedit a:visited, #wikiedit img:hover {
+	border: 0px none;
+	background: #fff;
+	text-decoration: none;
+	}

@@ -1,0 +1,69 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+	<title>$WikiTitle: {$Group}/{$Titlespaced}</title>
+	<link rel='stylesheet' href='$SkinDirUrl/style.css' type='text/css' />
+	<link rel='stylesheet' href='$SkinDirUrl/color-$SkinColor/color.css' type='text/css' />
+
+<!--HTMLHeader-->
+</head>
+<body>
+	<div id="container">
+		<div id="header">
+			<div id="title">
+				<!--PageTitleFmt-->
+				<a class="tagline" href='{$ScriptUrl}/{$Group}'>{$Group}</a>
+				<h1>{$Titlespaced}</h1>
+				<!--/PageTitleFmt-->
+			</div>
+			<div class="wikicmds">
+				<!--PageActionsFmt-->
+				<!--wiki:{$Group}.PageActions {$SiteGroup}.PageActions-->
+				<!--/PageActionsFmt-->
+			</div>
+		</div>
+		<div id="content_bg">
+			<div class="container_left">
+				<div class="container_right">
+
+					<div class="topline">
+						<div class="clearfix">
+							<div id="right">
+								<div id="search">
+									<form action='$ScriptUrl'>
+										<input class="hidden" type='hidden' name='n' value='{$FullName}' />
+										<input class="hidden" type='hidden' name='action' value='search' />
+										<input class='searchfield' type='text' name='q' value='' />
+										<input class='submit' type='submit' value='' />
+									</form>
+								</div>
+								<div id="links">
+									<!--PageRightFmt-->
+									<!--wiki:{$Group}.SideBar {$SiteGroup}.SideBar-->
+									<!--/PageRightFmt-->
+								</div>
+							</div>
+							<div id="content">
+								<!--PageTitleFmt-->
+								<a href='{$ScriptUrl}/{$Group}'>{$Group}</a>
+								<h1>{$Titlespaced}</h1>
+								<!--/PageTitleFmt-->
+								<!--PageText-->
+							</div>
+							
+							<div id="footer_container">
+								<div id="footer">
+									<!--PageFooterFmt-->
+									<!--wiki:{$Group}.GroupFooter {$SiteGroup}.SiteFooter-->
+									<!--/PageFooterFmt-->
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
