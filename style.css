@@ -31,7 +31,8 @@ body {
 	}
 h1 {
 	font-size: 2.2em;
-	margin: 0;
+	font-weight: bold;
+	margin: 0 0 15px;
 	}
 h1 a:link, h1 a:visited {
 	text-decoration: none;
@@ -87,14 +88,29 @@ p {
 	position: absolute;
 	width: 765px;
 	}
+#headertext {
+	font-size: 2.2em;
+	font-weight: bold;
+	margin: 0;
+	}
+#headertext a:link, #headertext a:visited {
+	text-decoration: none;
+	}
+#headertext a:hover, #headertext a:active {
+	background: none;
+	text-decoration: none;
+	}
+#title {
+	float: left;
+	}
 #container {
 	width: 765px;
 	margin: 0 auto;
 	text-align: left;
 	}
 #content {
-	padding-top: 30px;
-	margin: 20px;
+	padding-top: 28px;
+	margin: 0 20px 20px;
 	width: 530px;
 	}
 #content_bg {
@@ -197,7 +213,7 @@ p.comment_meta {
 	padding: 20px 0 0 0;
 	margin: 0;
 	}
-#links p {
+#links, #links p {
 	border-top: 3px solid;
 	margin-top: -5px;
 	margin: 0;
@@ -279,39 +295,29 @@ p.searchinfo {
 
 /* 5)-=-=-=- Footer -=-=-=- */	
 #footer_container {
+	margin-top: 20px;
 	clear: both;
 	height: 75px;
 	width: 765px;
 	}
-#footer {
-	margin: 20px 20px 5px;
-	float: left;
-	font-size: .8em;
-	}
-#versions {
-	float: right;
-	text-align: right;
-	}
 #footer p {
-	padding: 30px 0 0 70px;
+	padding: 30px 0 0 0;
+	margin-left: 20px;
 	float: left;
-	text-transform: uppercase;
-	font-size: .8em;
 	}
 .extras {
 	float: right;
-	padding: 33px 18px 0 0;
+	padding: 33px 8px 0 0;
 	}
 .extras a {
 	text-decoration: none;
-	font-weight: bold;
 	}
 .extras a:link, .extras a:visited {
-	padding: 5px;
+	padding: 2px;
 	border: 2px solid;
 	}
 .extras a:hover, .extras a:active {
-	padding: 5px;
+	padding: 2px;
 	border: 2px solid;
 	}
 .extras li {
@@ -372,7 +378,7 @@ hr { /* Simple style when CSS not in use */
 /* 9)-=-=-=- PmWiki -=-=-=- */
 .wikicmds { 
 	float: right; 
-	margin-top: -16px;
+	margin-top: 34px;
 	padding-right: 14px;
 	text-align: right;
 	width: 250px;
@@ -443,3 +449,6 @@ img {
 	background: #fff;
 	text-decoration: none;
 	}
+.diffbox {
+   width: 100%;
+   }

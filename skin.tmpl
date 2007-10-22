@@ -5,17 +5,15 @@
 	<title>$WikiTitle: {$Group}/{$Titlespaced}</title>
 	<link rel='stylesheet' href='$SkinDirUrl/style.css' type='text/css' />
 	<link rel='stylesheet' href='$SkinDirUrl/color-$SkinColor/color.css' type='text/css' />
-
 <!--HTMLHeader-->
 </head>
 <body>
 	<div id="container">
 		<div id="header">
 			<div id="title">
-				<!--PageTitleFmt-->
-				<a class="tagline" href='{$ScriptUrl}/{$Group}'>{$Group}</a>
-				<h1>{$Titlespaced}</h1>
-				<!--/PageTitleFmt-->
+				<!--PageHeaderFmt-->
+				<!--wiki:{$SiteGroup}.SiteHeader {$SiteGroup}.{$SkinName}-SiteHeader-->
+				<!--/PageHeaderFmt-->
 			</div>
 			<div class="wikicmds">
 				<!--PageActionsFmt-->
@@ -46,18 +44,21 @@
 							</div>
 							<div id="content">
 								<!--PageTitleFmt-->
-								<a href='{$ScriptUrl}/{$Group}'>{$Group}</a>
+								<a href='{$ScriptUrl}/{$Group}' class="tagline">{$Group}</a>
 								<h1>{$Titlespaced}</h1>
 								<!--/PageTitleFmt-->
 								<!--PageText-->
 							</div>
 							
 							<div id="footer_container">
+							<!--PageFooterFmt-->
 								<div id="footer">
-									<!--PageFooterFmt-->
 									<!--wiki:{$Group}.GroupFooter {$SiteGroup}.SiteFooter-->
-									<!--/PageFooterFmt-->
 								</div>
+								<div class="extras">
+									<!--wiki:{$SiteGroup}.{$SkinName}-Versions-->
+								</div>
+							<!--/PageFooterFmt-->
 							</div>
 						</div>
 					</div>

@@ -3,16 +3,10 @@
 body {
 	background: #F8FAFB url(images/bg_top.gif) repeat-x;
 	}
-body, h2 a:hover, h2 a:active,.quickref code {
+body, h1 a:hover, h1 a:active, h2 a:hover, h2 a:active,.quickref code {
 	color: #3F3F3F;
 	}
-h1, h1 a:link, h1 a:visited {
-	color: #F0F7FB;
-	}
-h1 a:hover, h1 a:active {
-	color: #AECEE1;
-	}
-h2, h2 a:link, h2 a:visited, .searchfield, input:hover {
+h1, h1 a:link, h1 a:visited, h2, h2 a:link, h2 a:visited, .searchfield, input:hover {
 	color: #5A849E;
 	}
 a:link,a:visited, .comments a:link, .comments a:visited, .wikicmds a, .wikicmds a:link, .wikicmds a:visited {
@@ -32,8 +26,14 @@ code {
 	}
 
 /* 2)-=-=-=- Structure -=-=-=- */
-.tagline {
-	color: #888;
+#headertext, #headertext a:link, #headertext a:visited {
+	color: #FCFEF4;
+	}
+#headertext a:hover, #headertext a:active {
+	color: #DAED9C;
+	}
+#title .tagline {
+	color: #888 !important;
 	}
 
 /* 3)-=-=-=- Left selectors -=-=-=- */	
@@ -62,7 +62,7 @@ code {
 	background-color: #D2E8F5 !important; 
 	border-color: #B7D3E4 !important;
 	}
-.alt:hover, .commentlist li:hover, #links p, .line, .searchfield, input:hover, textarea:hover {
+.alt:hover, .commentlist li:hover, #links, #links p, .line, .searchfield, input:hover, textarea:hover {
 	border-color: #B3D2E6 !important;
 	}
 .commentlist li {

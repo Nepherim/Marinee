@@ -15,12 +15,18 @@ $FmtPV['$SkinVersion'] = '"1.0.0"';
 
 ## Default color scheme
 global $SkinColor;
-if (isset($_GET['color'])) {
+if (isset($_GET['color']) && ( $_GET['color']=='blue' || $_GET['color']=='orange')  ) {
 	$SkinColor = $_GET['color'];
 } else {
 	SDV($SkinColor, 'green');
 }
 
+## Add a custom page storage location
+global $PageStorePath, $WikiLibDirs;
+$PageStorePath = dirname(__FILE__)."/wikilib.d/{\$FullName}";
+$where = count($WikiLibDirs);
+if ($where>1) $where--;
+array_splice($WikiLibDirs, $where, 0, array(new PageStore($PageStorePath)));
 
 ## Override pmwiki styles otherwise they will override styles declared in css
 global $HTMLStylesFmt;
