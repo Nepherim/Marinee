@@ -121,6 +121,9 @@ input:hover, textarea:hover{
 	}
 
 /* 7)-=-=-=- Accessibility -=-=-=- */
+hr {
+	border-color: #FFA62B;
+	}
 
 /* 8)-=-=-=- Hacks -=-=-=- */
 

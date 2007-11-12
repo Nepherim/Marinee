@@ -86,7 +86,7 @@ p {
 #header {
 	margin: -50px 15px 0 7px;
 	position: absolute;
-	width: 765px;
+	width: 800px;
 	}
 #headertext {
 	font-size: 2.2em;
@@ -104,14 +104,14 @@ p {
 	float: left;
 	}
 #container {
-	width: 765px;
+	width: 800px;
 	margin: 0 auto;
 	text-align: left;
 	}
 #content {
 	padding-top: 28px;
 	margin: 0 20px 20px;
-	width: 530px;
+	width: 585px;
 	}
 #content_bg {
 	clear: both;
@@ -195,7 +195,7 @@ p.comment_meta {
 	/* Box model hack used for IE5.5/5 */
 	voice-family: "\"}\""; 
   	voice-family: inherit;
-  	width: 180px;
+  	width: 160px;
 	}
 #right .sidehead a {
 	font-size: 1.4em;
@@ -273,7 +273,7 @@ p.searchinfo {
 .searchfield {
 	border: 1px solid;
 	padding: 2px 5px 1px 5px;
-	width: 107px;
+	width: 87px;
 	}
 .searchfield:hover {
 	border: 1px solid;
@@ -298,7 +298,7 @@ p.searchinfo {
 	margin-top: 20px;
 	clear: both;
 	height: 75px;
-	width: 765px;
+	width: 800px;
 	}
 #footer p {
 	padding: 30px 0 0 0;
@@ -348,7 +348,7 @@ textarea {
 	font-size: 1.1em;
 	border: 1px solid;
 	padding: 2px 5px 1px 5px;
-	width: 515px;
+	width: 570px;
 	overflow: auto;
 	}
 textarea:hover {
@@ -360,7 +360,8 @@ textarea:hover {
 	display: none;
 	}
 hr { /* Simple style when CSS not in use */
-	display: none;
+	border: .14em solid;
+	margin-right: 5px;
 	}
 
 /* 8)-=-=-=- Hacks -=-=-=- */
