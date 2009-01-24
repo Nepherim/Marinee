@@ -36,7 +36,7 @@ code {
 	color: #888 !important;
 	}
 
-/* 3)-=-=-=- Left selectors -=-=-=- */	
+/* 3)-=-=-=- Left selectors -=-=-=- */
 .container_left {
 	background: url(images/container_left.gif) no-repeat;
 	}
@@ -49,17 +49,17 @@ code {
 #content_bg {
 	background: #fff url(images/container.gif) repeat-y;
 	}
-.meta {
+.meta, .blogger-meta-data {
 	background-color: #F5F5F5;
 	}
-.meta:hover, .highlight {
+.meta:hover, .blogger-meta-data:hover, .highlight {
 	background-color: #DCECF6;
 	}
 .comments {
 	border-bottom-color: #eee;
 	}
 .alt {
-	background-color: #D2E8F5 !important; 
+	background-color: #D2E8F5 !important;
 	border-color: #B7D3E4 !important;
 	}
 .alt:hover, .commentlist li:hover, #links, #links p, .line, .searchfield, input:hover, textarea:hover {
@@ -71,7 +71,7 @@ code {
 	color: #31556B;
 	}
 
-/* 4)-=-=-=- Right selectors -=-=-=- */	
+/* 4)-=-=-=- Right selectors -=-=-=- */
 #links li {
 	background: url(images/links_bullet.gif) no-repeat 0 4px;
 	}
@@ -97,7 +97,7 @@ p.searchinfo {
 	background: url(images/search_submit.gif) no-repeat;
 	}
 
-/* 5)-=-=-=- Footer -=-=-=- */	
+/* 5)-=-=-=- Footer -=-=-=- */
 #footer_container {
 	background: url(images/footer.gif) no-repeat;
 	}

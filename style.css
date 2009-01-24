@@ -32,7 +32,7 @@ body {
 h1 {
 	font-size: 2.2em;
 	font-weight: bold;
-	margin: 0 0 15px;
+	margin: 0;
 	}
 h1 a:link, h1 a:visited {
 	text-decoration: none;
@@ -78,7 +78,7 @@ code {
 
 p {
 	line-height: 1.4;
-	margin-top:0px; 
+	margin-top:0px;
 	margin-bottom:0px;
 	}
 
@@ -120,8 +120,9 @@ p {
 	font-size: 1em;
 	}
 
-/* 3)-=-=-=- Left selectors -=-=-=- */	
-.meta {
+/* 3)-=-=-=- Left selectors -=-=-=- */
+.meta, .blogger-meta-data {
+	margin-bottom: 1.2em;
 	font-size: .9em;
 	padding: 2px;
 	}
@@ -136,7 +137,7 @@ p {
 	}
 .comments a:hover, .comments a:active {
 	text-decoration: none;
-	}	
+	}
 
 .alt {
 	border: 1px solid !important;
@@ -187,15 +188,18 @@ p.comment_meta {
 	margin-left: 10px;
 	}
 
-/* 4)-=-=-=- Right selectors -=-=-=- */	
+/* 4)-=-=-=- Right selectors -=-=-=- */
 #right {
 	float: right;
 	padding: 25px 15px 10px;
-	
+
 	/* Box model hack used for IE5.5/5 */
-	voice-family: "\"}\""; 
+	voice-family: "\"}\"";
   	voice-family: inherit;
   	width: 160px;
+	}
+#right .sidehead {
+	margin-top: 15px;
 	}
 #right .sidehead a {
 	font-size: 1.4em;
@@ -213,7 +217,7 @@ p.comment_meta {
 	padding: 20px 0 0 0;
 	margin: 0;
 	}
-#links, #links p {
+#links p {
 	border-top: 3px solid;
 	margin-top: -5px;
 	margin: 0;
@@ -229,7 +233,7 @@ p.comment_meta {
 	font-size: 1em !important;
 	font-size: .9em;
 	}
-	
+
 #links li li li {
 	background: url(images/sub_icon.gif) no-repeat 0 5px;
 	padding: 3px 0 2px 13px;
@@ -293,7 +297,7 @@ p.searchinfo {
 	font-size: .9em;
 	}
 
-/* 5)-=-=-=- Footer -=-=-=- */	
+/* 5)-=-=-=- Footer -=-=-=- */
 #footer_container {
 	margin-top: 20px;
 	clear: both;
@@ -348,7 +352,7 @@ textarea {
 	font-size: 1.1em;
 	border: 1px solid;
 	padding: 2px 5px 1px 5px;
-	width: 570px;
+	width: 99%;
 	overflow: auto;
 	}
 textarea:hover {
@@ -366,33 +370,33 @@ hr { /* Simple style when CSS not in use */
 
 /* 8)-=-=-=- Hacks -=-=-=- */
 .clearfix:after { /* float hack used to float content correctly */
-    content: "."; 
-   	display: block; 
-   	height: 0; 
-   	clear: both; 
+    content: ".";
+   	display: block;
+   	height: 0;
+   	clear: both;
     visibility: hidden;
 	}
 /* Hides from IE-mac \*/
 * html .clearfix {height: 1%;}
-/* End hide from IE-mac */	
+/* End hide from IE-mac */
 
 /* 9)-=-=-=- PmWiki -=-=-=- */
-.wikicmds { 
-	float: right; 
+.wikicmds {
+	float: right;
 	margin-top: 34px;
 	padding-right: 14px;
 	text-align: right;
 	width: 250px;
 	font-size: .85em;
    }
-.wikicmds ul { 
-	list-style: none; 
+.wikicmds ul {
+	list-style: none;
 	margin: 0;
 	padding: 0;
-   }  
-.wikicmds li { 
-	display: inline; 
-	margin: 0px 3px; 
+   }
+.wikicmds li {
+	display: inline;
+	margin: 0px 3px;
    }
 .quickref {
 	margin-top: 20px;
@@ -404,43 +408,43 @@ hr { /* Simple style when CSS not in use */
 	margin: 0 !important;
 	}
 ul, ol, pre, dl, p {
-	margin-top:0px; 
-	margin-bottom:20px; 
+	margin-top:0px;
+	margin-bottom:20px;
 	}
 #wikitext ol li, #wikitext ul li {
 	margin-top: 6px;
 	}
-.varlink, pre, code.escaped { 
-	font-size: 110% !important; 
+.varlink, pre, code.escaped {
+	font-size: 110% !important;
 	}
-code.escaped, .varlink, .varlink code, pre, code.escaped { 
+code.escaped, .varlink, .varlink code, pre, code.escaped {
 /*	white-space: nowrap; */
 	}
-.vspace { 
-	margin-top:1.33em; 
+.vspace {
+	margin-top:1.33em;
 	}
-.indent { 
-	margin-left:40px; 
+.indent {
+	margin-left:40px;
 	}
-.outdent { 
-	margin-left:40px; text-indent:-40px; 
+.outdent {
+	margin-left:40px; text-indent:-40px;
 	}
-a.createlinktext { 
-	text-decoration:none; border-bottom:none; 
+a.createlinktext {
+	text-decoration:none; border-bottom:none;
 	}
-a.createlink { 
-	text-decoration:none; 
-	position:relative; 
-	top:-0.5em; 
-	font-weight:bold; 
-	font-size:smaller; 
-	border-bottom:none; 
+a.createlink {
+	text-decoration:none;
+	position:relative;
+	top:-0.5em;
+	font-weight:bold;
+	font-size:smaller;
+	border-bottom:none;
 	}
-img { 
-	border:0px; 
+img {
+	border:0px;
 	}
-#wikidiff { 
-	font-size: 110%; 
+#wikidiff {
+	font-size: 110%;
 	}
 .vspace p {
    margin-top: 3em;
