@@ -23,7 +23,7 @@
 /* 1) -=-=-=- General selectors -=-=-=- */
 
 body {
-	margin: 68px 0 20px 0;
+	margin: 0 0 20px 0;
 	padding: 0;
 	font-family: Arial, Verdana, Helvetica;
 	font-size: 76%;
@@ -84,14 +84,19 @@ p {
 
 /* 2)-=-=-=- Structure -=-=-=- */
 #header {
-	margin: -50px 15px 0 7px;
-	position: absolute;
-	width: 800px;
+	width: 100%;
+	height: 46px;
+	padding: 11px 0;
+	}
+.wikicmds{
+	float: right;
+	width: 50%;
 	}
 #headertext {
 	font-size: 2.2em;
 	font-weight: bold;
 	margin: 0;
+	line-height: 1em;
 	}
 #headertext a:link, #headertext a:visited {
 	text-decoration: none;
@@ -102,22 +107,29 @@ p {
 	}
 #title {
 	float: left;
+	width: 65%;
+	padding-left:8px;
 	}
+.tagline {
+  clear:both;
+  font-size: 1em;
+  }
 #container {
 	width: 800px;
 	margin: 0 auto;
 	text-align: left;
 	}
 #content {
-	padding-top: 28px;
-	margin: 0 20px 20px;
-	width: 585px;
-	}
-#content_bg {
+	float:left;
+	width:100%;
+	text-align: left;
 	clear: both;
 	}
-.tagline {
-	font-size: 1em;
+#main{
+	float: left;
+	width:70%;
+	padding:0 20px;
+	min-height: 300px;
 	}
 
 /* 3)-=-=-=- Left selectors -=-=-=- */
@@ -191,15 +203,8 @@ p.comment_meta {
 /* 4)-=-=-=- Right selectors -=-=-=- */
 #right {
 	float: right;
-	padding: 25px 15px 10px;
-
-	/* Box model hack used for IE5.5/5 */
-	voice-family: "\"}\"";
-  	voice-family: inherit;
-  	width: 160px;
-	}
-#right .sidehead {
-	margin-top: 15px;
+	width:19%;
+	padding:0 20px;
 	}
 #right .sidehead a {
 	font-size: 1.4em;
@@ -265,6 +270,10 @@ p.comment_meta {
 	margin: 0 auto 15px;
 	padding-top: 0;
 	}
+#search fieldset {
+	border: 0;
+	padding: 10px 0;
+	}
 #search h3 {
 	font-size: 1.4em;
 	margin: 20px 0 -10px 0;
@@ -277,14 +286,14 @@ p.searchinfo {
 .searchfield {
 	border: 1px solid;
 	padding: 2px 5px 1px 5px;
-	width: 87px;
+	width: 85px;
 	}
 .searchfield:hover {
 	border: 1px solid;
 	}
 .submit, .submit:hover {
 	height: 20px;
-	width: 52px;
+	width: 41px;
 	border: 0;
 	margin-left: 2px;
 	text-indent: -9999px;
@@ -330,6 +339,14 @@ p.searchinfo {
 .extras ul {
 	padding: 0 0 10px 0;
 	margin: 0;
+	}
+#skintag {
+	float: right;
+	padding: 33px 8px 0 0;
+	color: #ccc;
+	}
+#skintag a {
+	color: #ccc;
 	}
 
 /* 6)-=-=-=- Forms -=-=-=- */
@@ -383,10 +400,10 @@ hr { /* Simple style when CSS not in use */
 /* 9)-=-=-=- PmWiki -=-=-=- */
 .wikicmds {
 	float: right;
-	margin-top: 34px;
+	margin-top: 29px;
 	padding-right: 14px;
 	text-align: right;
-	width: 250px;
+	width: 30%;
 	font-size: .85em;
    }
 .wikicmds ul {

@@ -37,16 +37,16 @@ code {
 	}
 
 /* 3)-=-=-=- Left selectors -=-=-=- */
-.container_left {
+#main {
 	background: url(images/container_left.gif) no-repeat;
 	}
-.container_right {
+#right {
 	background: url(images/container_right.gif) no-repeat top right;
 	}
-.topline {
-	background: url(images/container_top.gif) no-repeat;
+#header {
+	background:#000 url(images/container_top.gif) bottom no-repeat;
 	}
-#content_bg {
+#container {
 	background: #fff url(images/container.gif) repeat-y;
 	}
 .meta, .blogger-meta-data {

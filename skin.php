@@ -1,7 +1,6 @@
 <?php if (!defined('PmWiki')) exit();
 /*
  * PmWiki Marinee skin
- * Version 1.0.0  (21-Oct-07)
  *
  * Examples at: http://pmwiki.com/Cookbook/Marinee and http://skins.solidgone.com/
  * Copyright (c) 2007 David Gilbert
@@ -11,14 +10,15 @@
  */
 global $FmtPV;
 $FmtPV['$SkinName'] = '"Marinee"';
-$FmtPV['$SkinVersion'] = '"1.0.0"';
+$FmtPV['$SkinVersion'] = '"1.1.0"';
 
-## Default color scheme
-global $SkinColor;
-if (isset($_GET['color']) && ( $_GET['color']=='blue' || $_GET['color']=='orange')  ) {
+global $SkinColor, $ValidSkinColors;
+if ( !is_array($ValidSkinColors) ) $ValidSkinColors = array();
+array_push($ValidSkinColors, 'blue', 'orange', 'green');
+if ( isset($_GET['color']) && in_array($_GET['color'], $ValidSkinColors) ) {
 	$SkinColor = $_GET['color'];
-} else {
-	SDV($SkinColor, 'green');
+} elseif ( !in_array($SkinColor, $ValidSkinColors) ) {
+	$SkinColor = 'green';
 }
 
 ## Add a custom page storage location

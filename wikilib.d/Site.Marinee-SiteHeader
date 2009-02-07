@@ -5,11 +5,35 @@ charset=ISO-8859-1
 csum=
 ctime=1192940798
 host=127.0.0.1
-name=Site.SiteHeader
-rev=7
+name=Site.Marinee-SiteHeader
+rev=15
 targets=
 text=(:div id="headertext":){$Titlespaced}%0a(:divend:)%0a(:div class="tagline":)Tagline%0a(:divend:)
-time=1193004651
+time=1193013813
+author:1193013813=
+diff:1193013813:1193013567:=1,4c1,2%0a%3c (:div id="headertext":){$Titlespaced}%0a%3c (:divend:)%0a%3c (:div class="tagline":)Tagline%0a%3c (:divend:)%0a\ No newline at end of file%0a---%0a> (:div9991 id="headertext":)xx%0a> (:div9991end:)%0a\ No newline at end of file%0a
+host:1193013813=127.0.0.1
+author:1193013567=
+diff:1193013567:1193013522:=
+host:1193013567=127.0.0.1
+author:1193013522=
+diff:1193013522:1193013504:=1c1%0a%3c (:div9991 id="headertext":)xx%0a---%0a> (:div9991 id="headertext":){$Titlespaced}%0a
+host:1193013522=127.0.0.1
+author:1193013504=
+diff:1193013504:1193013492:=2c2%0a%3c (:div9991end:)%0a\ No newline at end of file%0a---%0a> (:divend9991:)%0a\ No newline at end of file%0a
+host:1193013504=127.0.0.1
+author:1193013492=
+diff:1193013492:1193013456:=1,2c1%0a%3c (:div9991 id="headertext":){$Titlespaced}%0a%3c (:divend9991:)%0a\ No newline at end of file%0a---%0a> (:div id="headertext":){$Titlespaced} (:divend:)%0a\ No newline at end of file%0a
+host:1193013492=127.0.0.1
+author:1193013456=
+diff:1193013456:1193013443:=1c1%0a%3c (:div id="headertext":){$Titlespaced} (:divend:)%0a\ No newline at end of file%0a---%0a> (:div id="headertext":){$Titlespaced}(:divend:)%0a\ No newline at end of file%0a
+host:1193013456=127.0.0.1
+author:1193013443=
+diff:1193013443:1193013400:=1c1,2%0a%3c (:div id="headertext":){$Titlespaced}(:divend:)%0a\ No newline at end of file%0a---%0a> (:div id="headertext":){$Titlespaced}%0a> (:divend:)%0a\ No newline at end of file%0a
+host:1193013443=127.0.0.1
+author:1193013400=
+diff:1193013400:1193004651:=1a2,3%0a> (:divend:)%0a> (:div class="tagline":)Tagline%0a
+host:1193013400=127.0.0.1
 author:1193004651=
 diff:1193004651:1193004623:=
 host:1193004651=127.0.0.1
