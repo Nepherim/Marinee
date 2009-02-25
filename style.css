@@ -29,15 +29,15 @@ body {
 	font-size: 76%;
 	text-align: center;
 	}
-h1 {
+#main h1 {
 	font-size: 2.2em;
 	font-weight: bold;
 	margin: 0;
 	}
-h1 a:link, h1 a:visited {
+#main h1 a:link, #main h1 a:visited {
 	text-decoration: none;
 	}
-h1 a:hover, h1 a:active {
+#main h1 a:hover, #main h1 a:active {
 	background: none;
 	text-decoration: none;
 	}
@@ -92,16 +92,18 @@ p {
 	float: right;
 	width: 50%;
 	}
-#headertext {
-	font-size: 2.2em;
+#headertext, #headertext h1 {
+	font-size: 1.4em;
 	font-weight: bold;
 	margin: 0;
 	line-height: 1em;
 	}
-#headertext a:link, #headertext a:visited {
+#headertext a:link, #headertext a:visited ,
+#headertext h1 a:link, #headertext h1 a:visited {
 	text-decoration: none;
 	}
-#headertext a:hover, #headertext a:active {
+#headertext a:hover, #headertext a:active,
+#headertext h1 a:hover, #headertext h1 a:active {
 	background: none;
 	text-decoration: none;
 	}
@@ -437,6 +439,7 @@ ul, ol, pre, dl, p {
 code.escaped, .varlink, .varlink code, pre, code.escaped {
 /*	white-space: nowrap; */
 	}
+pre {overflow: auto;}
 .vspace {
 	margin-top:1.33em;
 	}
@@ -474,3 +477,19 @@ img {
 .diffbox {
    width: 100%;
    }
+.readmore {
+	display: block;
+	margin-top: 10px;
+	padding-bottom: 10px;
+	font-weight: bold;
+	}
+#wikiedit form img, #searchform fieldset {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	}
+.wikimessage {
+	color: red;
+	font-weight: bold;
+	font-size: 110%;
+	}
