@@ -49,10 +49,10 @@ code {
 #container {
 	background: #fff url(images/container.gif) repeat-y;
 	}
-.meta, .blogger-meta-data {
+.meta, .blogit-meta-data {
 	background-color: #F5F5F5;
 	}
-.meta:hover, .blogger-meta-data:hover, .highlight {
+.meta:hover, .blogit-meta-data:hover, .highlight {
 	background-color: #F7FEDC;
 	}
 .comments {
