@@ -87,32 +87,36 @@ p {
 	width: 100%;
 	height: 46px;
 	padding: 11px 0;
+	float: left;
+	overflow: hidden;
 	}
 .wikicmds{
 	float: right;
 	width: 50%;
 	}
-#headertext, #headertext h1 {
-	font-size: 1.4em;
+#siteheader .sitetitle {float:left}
+#siteheader .sitetitle a{display: block}
+#siteheader .sitetag {float: left; clear: left; margin-top: 1px; width: 100%}
+
+#siteheader .sitetitle {
+	font-size: 2.4em;
 	font-weight: bold;
 	margin: 0;
 	line-height: 1em;
 	}
-#headertext a:link, #headertext a:visited ,
-#headertext h1 a:link, #headertext h1 a:visited {
+#siteheader .sitetitle a:link, .sitetitle a:visited
 	text-decoration: none;
 	}
-#headertext a:hover, #headertext a:active,
-#headertext h1 a:hover, #headertext h1 a:active {
+#siteheader .sitetitle a:hover, .sitetitle a:active {
 	background: none;
 	text-decoration: none;
 	}
-#title {
+#siteheader {
 	float: left;
 	width: 65%;
 	padding-left:8px;
 	}
-.tagline {
+#siteheader .sitetag {
   clear:both;
   font-size: 1em;
   }
@@ -132,6 +136,10 @@ p {
 	width:70%;
 	padding:0 20px;
 	min-height: 300px;
+	}
+.blogit-post-summary {
+	clear: both;
+	margin-top: 20px;
 	}
 
 /* 3)-=-=-=- Left selectors -=-=-=- */
@@ -314,11 +322,16 @@ p.searchinfo {
 	clear: both;
 	height: 75px;
 	width: 800px;
+	position: relative;
+	}
+#footer {
+	float: left;
+	margin-left: 20px;
+	position: absolute;
+	bottom: 20px;
 	}
 #footer p {
-	padding: 30px 0 0 0;
-	margin-left: 20px;
-	float: left;
+	margin: 0;
 	}
 .extras {
 	float: right;
@@ -342,12 +355,13 @@ p.searchinfo {
 	padding: 0 0 10px 0;
 	margin: 0;
 	}
-#skintag {
+#credits {
+	clear: left;
 	float: right;
-	padding: 33px 8px 0 0;
+	padding: 3px 8px 0 0;
 	color: #ccc;
 	}
-#skintag a {
+#credits a {
 	color: #ccc;
 	}
 
@@ -417,15 +431,14 @@ hr { /* Simple style when CSS not in use */
 	display: inline;
 	margin: 0px 3px;
    }
-.quickref {
+#wikitext .quickref {
 	margin-top: 20px;
 	}
+#wikitext .quickref p { line-height: 2em; margin: 0 !important; }
+
 #wikitext p {
 	margin: 0.5em 0 0;		/* for better consistency across platforms */
    }
-.quickref p {
-	margin: 0 !important;
-	}
 ul, ol, pre, dl, p {
 	margin-top:0px;
 	margin-bottom:20px;

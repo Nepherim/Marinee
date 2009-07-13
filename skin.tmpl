@@ -3,7 +3,6 @@
  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 	<title>$WikiTitle {$Group}/{$Titlespaced}</title>
 	<link rel='stylesheet' href='$SkinDirUrl/style.css' type='text/css' />
 	<link rel='stylesheet' href='$SkinDirUrl/color-$SkinColor/color.css' type='text/css' />
@@ -12,9 +11,9 @@
 <body>
 	<div id="container">
 		<div id="header">
-			<div id="title">
+			<div id="siteheader">
 				<!--PageHeaderFmt-->
-				<!--wiki:{$Group}.SiteHeader {$SiteGroup}.SiteHeader {$SiteGroup}.{$SkinName}-SiteHeader-->
+				<!--wiki:{$Group}.SiteHeader {$SiteGroup}.SiteHeader-->
 				<!--/PageHeaderFmt-->
 			</div>
 			<div class="wikicmds">
@@ -36,7 +35,7 @@
 			<div id="right">
 				<div id="search">
 					<!--PageSearchFmt-->
-					<form action='$ScriptUrl'>
+					<form id="searchform" action='$ScriptUrl' method="post">
 					<fieldset>
 						<input class="hidden" type='hidden' name='n' value='{$FullName}' />
 						<input class="hidden" type='hidden' name='action' value='$[search]' />
@@ -48,22 +47,24 @@
 				</div>
 				<div id="links">
 					<!--PageRightFmt-->
-					<!--wiki:{$Group}.SideBar {$SiteGroup}.SideBar {$SiteGroup}.{$SkinName}-SideBar-->
+					<!--wiki:{$Group}.SideBar {$SiteGroup}.SideBar-->
 					<!--/PageRightFmt-->
 				</div>
 			</div>
 		</div>
 
-		<!--PageFooterFmt-->
 		<div id="footer_container">
 			<div id="footer">
-				<!--wiki:{$Group}.SiteFooter {$SiteGroup}.SiteFooter {$SiteGroup}.{$SkinName}-SiteFooter-->
-			</div>
-			<div id="skintag">
-				<p><a href="http://e-lusion.com/greenmarinee/" rel="nofollow">Green Marinee</a> theme adapted by <a href="http://solidgone.org/Skins/">David Gilbert</a>, powered by <a href="http://pmwiki.com/">PmWiki</a></p>
+				<!--PageFooterFmt-->
+					<!--wiki:{$Group}.SiteFooter {$SiteGroup}.SiteFooter-->
+				<!--/PageFooterFmt-->
 			</div>
 		</div>
-		<!--/PageFooterFmt-->
+			<div id="credits">
+				<p><a href="http://e-lusion.com/greenmarinee/">Green Marinee</a> theme adapted by <a href="http://solidgone.org/Skins/">David Gilbert</a>, powered by <a href="http://pmwiki.com/">PmWiki</a></p>
+			</div>
+
 	</div>
+<!--HTMLFooter-->
 </body>
 </html>

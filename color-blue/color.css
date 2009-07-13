@@ -26,11 +26,12 @@ code {
 	}
 
 /* 2)-=-=-=- Structure -=-=-=- */
-#headertext, #headertext a:link, #headertext a:visited {
+.sitetitle, .sitetitle a:link, .sitetitle a:visited {
 	color: #FCFEF4;
 	}
-#headertext a:hover, #headertext a:active {
+.sitetitle a:hover, .sitetitle a:active {
 	color: #DAED9C;
+	background-color: #000;
 	}
 #title .tagline {
 	color: #888 !important;
@@ -128,6 +129,4 @@ hr {
 /* 8)-=-=-=- Hacks -=-=-=- */
 
 /* 9)-=-=-=- PmWiki -=-=-=- */
-.quickref code {
-	background-color: #F9F9F9;
-	}
+.quickref code { background-color: #F9F9F9; }

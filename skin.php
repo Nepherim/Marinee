@@ -9,12 +9,26 @@
  */
 global $FmtPV;
 $FmtPV['$SkinName'] = '"Marinee"';
-$FmtPV['$SkinVersion'] = '"1.1.0"';
+$FmtPV['$SkinVersion'] = '"2.0.0"';
 
 # ----------------------------------------
 # - Standard Skin Setup
 # ----------------------------------------
+global $PageLogoUrl, $PageLogoUrlHeight, $PageLogoUrlWidth, $HTMLStylesFmt;
+if (!empty($PageLogoUrl)) {
+	if (!isset($PageLogoUrlWidth) || !isset($PageLogoUrlHeight)) {
+		$size = getimagesize($PageLogoUrl);
+		SDV($PageLogoUrlWidth, ($size ?$size[0]+15 :0) .'px');
+		SDV($PageLogoUrlHeight, ($size ?$size[1] :0) .'px');
+	}
+	$HTMLStylesFmt['marinee'] .=
+		'#siteheader .sitetitle a{height:' .$PageLogoUrlHeight .'; background: url(' .$PageLogoUrl .') left top no-repeat} '.
+		'#siteheader .sitetitle a, #siteheader .sitetag{padding-left: ' .$PageLogoUrlWidth .'} '.
+		'#siteheader .sitetag{margin-top: ' .(28-substr($PageLogoUrlHeight,0,-2)) .'px}';
+}
+
 $FmtPV['$WikiTitle'] = '$GLOBALS["WikiTitle"]';
+$FmtPV['$WikiTag'] = '$GLOBALS["WikiTag"]';
 
 # Define a link stye for new page links
 global $LinkPageCreateFmt;

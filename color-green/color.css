@@ -26,13 +26,14 @@ code {
 	}
 
 /* 2)-=-=-=- Structure -=-=-=- */
-#headertext, #headertext a:link, #headertext a:visited {
+#siteheader .sitetitle, #siteheader .sitetitle a:link, #siteheader .sitetitle a:visited {
 	color: #FCFEF4;
 	}
-#headertext a:hover, #headertext a:active {
+#siteheader .sitetitle a:hover, #siteheader .sitetitle a:active {
 	color: #DAED9C;
+	background-color: #000;
 	}
-#title .tagline {
+#siteheader  .sitetag {
 	color: #888 !important;
 	}
 
