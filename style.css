@@ -104,7 +104,7 @@ p {
 	margin: 0;
 	line-height: 1em;
 	}
-#siteheader .sitetitle a:link, .sitetitle a:visited
+#siteheader .sitetitle a:link, .sitetitle a:visited {
 	text-decoration: none;
 	}
 #siteheader .sitetitle a:hover, .sitetitle a:active {
