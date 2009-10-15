@@ -49,23 +49,23 @@ code {
 #container {
 	background: #fff url(images/container.gif) repeat-y;
 	}
-.meta, .blogit-meta-data {
+.meta, .blogit-meta-data-head {
 	background-color: #F5F5F5;
 	}
-.meta:hover, .blogit-meta-data:hover, .highlight {
+.meta:hover, .blogit-meta-data-head:hover, .highlight {
 	background-color: #DCECF6;
 	}
-.comments {
+.commentblock {
 	border-bottom-color: #eee;
 	}
 .alt {
 	background-color: #D2E8F5 !important;
 	border-color: #B7D3E4 !important;
 	}
-.alt:hover, .commentlist li:hover, #links, #links p, .line, .searchfield, input:hover, textarea:hover {
+.alt:hover, .blogit-comment-list li:hover, #links, #links p, .line, .searchfield, input:hover, textarea:hover {
 	border-color: #B3D2E6 !important;
 	}
-.commentlist li {
+.blogit-comment-list li {
 	background-color: #EBF5FB;
 	border-color: #CEE0EB;
 	color: #31556B;

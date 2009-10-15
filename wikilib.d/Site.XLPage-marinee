@@ -7,5 +7,5 @@ host=127.0.0.1
 name=Site.XLPage-marinee
 rev=1
 targets=
-text=### Marinee Template%0a  'search' => '',%0a  'theme adapted by' => '',%0a  'Powered by' => ''
+text=### Marinee Template%0a  'search' => '',%0a  'theme adapted by' => '',%0a  'Powered by' => '',%0a  'Page last modified on {*$LastModified}' => ''%0a
 

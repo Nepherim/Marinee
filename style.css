@@ -140,22 +140,22 @@ p {
 	}
 
 /* 3)-=-=-=- Left selectors -=-=-=- */
-.meta, .blogit-meta-data {
+.meta, .blogit-meta-data-head {
 	line-height: 1.7em;
 	margin-bottom: 1.2em;
 	font-size: .9em;
 	padding: 2px;
 	}
-.comments {
+.commentblock {
 	font-size: 1.2em;
 	padding-bottom: 25px;
 	border-bottom: 3px double;
 	}
-.comments a:link, .comments a:visited {
+.commentblock a:link, .commentblock a:visited {
 	font-weight: bold;
 	text-decoration: none;
 	}
-.comments a:hover, .comments a:active {
+.commentblock a:hover, .commentblock a:active {
 	text-decoration: none;
 	}
 
@@ -166,14 +166,14 @@ p {
 .alt:hover {
 	border: 1px solid !important;
 	}
-.commentlist li:hover {
+.blogit-comment-list li:hover {
 	border: 1px solid;
 	}
-.commentlist {
+.blogit-comment-list {
 	padding: 0;
 	margin: 0;
 	}
-.commentlist li {
+.blogit-comment-list li {
 	list-style: none;
 	padding: 10px 10px 0 10px;
 	border: 1px solid;
@@ -184,9 +184,10 @@ p.metadate {
 	margin: 0;
 	text-transform: uppercase;
 	}
-p.comment_meta {
-	margin: 0 0 10px 10px;
+.blogit-comment-header {
+	margin: 0 0 10px 0;
 	font-size: .9em;
+	font-weight: bold;
 	}
 .comment_author a:visited {
 	font-weight: bold;
@@ -488,12 +489,17 @@ img {
 .diffbox {
    width: 100%;
    }
-.page-navigation{clear:both; padding:20px 0}
-.blogit-post {padding-top:20px; padding-bottom: 20px;}
-.blogit-next-entries a, .blogit-previous-entries a {font-size:130%; font-weight: bold;}
-.blogit-next-entries a {float:right;}
-.blogit-previous-entries a {float:left;}
+fieldset { margin: 0; padding: 0; border-style: none; }
+.blogit-page-navigation{clear:both; padding:20px 0}
+.blogit-post {padding-bottom: 20px;}
+.blogit-post-summary {padding-top:20px; padding-bottom: 20px;}
+.blogit-older-entries a, .blogit-newer-entries a {font-size:130%; font-weight: bold;}
+.blogit-older-entries a {float:right;}
+.blogit-newer-entries a {float:left;}
 .blogit-listmore {text-align:right;}
 .blogit-readmore {display: block; margin-top: 10px; padding-bottom: 10px; font-weight: bold; }
-#wikiedit form img, #searchform fieldset { margin: 0; padding: 0;	border: 0;}
+#wikiedit form img { margin: 0; padding: 0;	border: 0;}
 .wikimessage {color: red; font-weight: bold; font-size: 110%; }
+.blogit-meta-data-head h5 { margin: 0; }
+.blogit-meta-data-footer { margin-top: 15px; }
+.blogit-meta-data-footer h5 { padding-left: 10px; display: inline; }
